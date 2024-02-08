@@ -20,7 +20,7 @@ const popUp = document.getElementById("popUp");
 const loader = document.querySelector(".loader");
 
 const getThumbnailUrl = async (videoId) => {
-  const res = await fetch(`${GET_PREVIEW_IMG_URL}${videoId}`)
+  const res = await fetch(`${GET_PREVIEW_IMG_URL}${videoId}`, { method: "GET" })
     .then((data) => data.json())
     .then((data) => data.thumbnail_url);
 
