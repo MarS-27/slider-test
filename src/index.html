@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+  </head>
+  <body>
+    <main id="app">
+      <div class="loader"></div>
+      <section class="swiper main-swiper">
+        <div id="mainSwiperWrapper" class="swiper-wrapper"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+      <div id="popUp" class="popup">
+        <button id="hidePopUp" class="hide-popup">
+          <img src="/images/close-icon.svg" alt="Close button" />
+        </button>
+        <div class="swiper popup-swiper">
+          <div id="popUpSwiperWrapper" class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
